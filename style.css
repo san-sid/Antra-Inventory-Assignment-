@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    position: relative;
+}
+
+.inventory-container, .cart-container {
+    padding: 20px;
+    width: 45%;
+    border-radius: 5px;
+    font-family: 'Times New Roman', serif;
+    border: none;
+}
+
+.inventory-container h1, .cart-container h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.item, .cart-items li {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5dc; /* Pale brown background color */
+}
+
+.item .name {
+    flex: 1;
+    font-family: 'Times New Roman', serif;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.increase {
+    background-color: #28a745;
+    margin-left: 5px;
+}
+
+.increase:hover {
+    background-color: #218838;
+}
+
+.decrease {
+    background-color: #d9534f;
+    margin-right: 5px;
+}
+
+.decrease:hover {
+    background-color: #c9302c;
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.quantity {
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.add-to-cart {
+    background-color: #3336ff;
+    margin-left: 10px;
+}
+
+.add-to-cart:hover {
+    background-color: #0077cc;
+}
+
+.delete-from-cart {
+    background-color: #3336ff;
+}
+
+.delete-from-cart:hover {
+    background-color: #0077cc;
+}
+
+.checkout-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+}
+
+.checkout-button:hover {
+    background-color: #333;
+}
