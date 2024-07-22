@@ -137,7 +137,7 @@ const Controller = ((model, view) => {
     document.querySelectorAll('.delete-from-cart').forEach(button =>
       button.addEventListener('click', handleDelete)
     );
-    document.querySelector('.checkout-btn').addEventListener('click', handleCheckout);
+    document.querySelector('.checkout-button').addEventListener('click', handleCheckout);
   };
 
   const handleIncrease = (e) => {
